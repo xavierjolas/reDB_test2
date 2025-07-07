@@ -24,6 +24,62 @@
 - **CLI**: The command line interface for managing the application *(redb-cli)*
 - **Supervisor Service**: The central coordination service that starts all other microservices *(redb-supervisor)*
 
+## Test
+
+<details>
+  <summary>redb-node</summary>
+  <details>
+    <summary>localidentity</summary>
+  </details>
+  <details>
+    <summary>mesh</summary>
+  </details>
+    <details>
+    <summary>nodes</summary>
+  </details>
+    <details>
+    <summary>regions</summary>
+  </details>
+    <details>
+    <summary>routes</summary>
+  </details>
+    <details>
+    <summary>transformations</summary>
+  </details> 
+    <details>
+    <summary>tenants</summary>
+    </details> 
+            <details>
+            <summary>workspaces</summary>
+            </details>
+                <details>
+                <summary>environments</summary>
+                </details>
+                <details>
+                <summary>mappings</summary>
+                </details>   
+                <details>
+                    <summary>map</summary>
+                </details>   
+                    <details>
+                <summary>relationships</summary>
+                <details>
+                <summary>MCP servers</summary>
+                    <details>
+                    <summary>MCP resources</summary>
+                    <details>
+                    <summary>MCP tools</summary>
+                    <details>
+                    <summary>MCP prompts</summary>
+                <details>
+                <summary>repos</summary>
+                    <details>
+                    <summary>branches</summary>
+                        <details>
+                        <summary>commits</summary>
+  </details>
+  </details>
+</details>
 
 ## Resource Types
 
