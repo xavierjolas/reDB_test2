@@ -28,7 +28,7 @@
 
 ```
 redb-node/
-├── localidentity (local node identity, a generated unique identifier)
+├── local node identity (a generated unique identifier)
 ├── mesh (the mesh identity)
 ├── nodes (mesh nodes that are a part of the mesh)
 ├── regions (global regions that span across tenants, used for specifying where the nodes are)
@@ -69,7 +69,7 @@ The following tables show the implementation status of CLI commands across diffe
 - ⚠️ **In Progress** - Command is partially implemented or needs work
 - ⛔️ **Not Implemented** - Command is not yet implemented
 
-### Authentication Commands
+### Authentication Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -79,7 +79,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `auth status` | | Show login status |
 | ✅ | `change password` | | Change user password |
 
-### Session Commands
+### Session Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -88,7 +88,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `auth logout-all` | | Logs out all sessions |
 | ✅ | `auth update-session` | `<session_id> <new_name>` | Rename a session |
 
-### Mesh Commands (Service)
+### Mesh Commands (Service) ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -117,7 +117,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `modify global-region` | `<global-region>` | Modify the details of a global region |
 | ⚠️ | `delete global-region` | `<global-region>` | Delete a global region |
 
-### Tenant Commands (Service)
+### Tenant Commands (Service) ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -127,7 +127,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `modify tenant` | `<tenant>` | Modify details of a tenant |
 | ✅ | `delete tenant` | `<tenant>` | Delete a tenant |
 
-### User Commands
+### User Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -137,7 +137,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `modify user` | `<user>` | Modify details of a user |
 | ✅ | `delete user` | `<user>` | Delete a user |
 
-### Workspace Commands
+### Workspace Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -147,7 +147,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `modify workspace` | `<workspace>` | Modify the details of a workspace |
 | ✅ | `delete workspace` | `<workspace>` | Delete a workspace |
 
-### Region Commands
+### Region Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -157,7 +157,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `modify region` | `<region>` | Modify the details of a region |
 | ✅ | `delete region` | `<region>` | Delete a region |
 
-### Environment Commands
+### Environment Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -167,7 +167,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `modify environment` | `<environment>` | Modify the details of an environment |
 | ✅ | `delete environment` | `<environment>` | Delete an environment |
 
-### Instance Commands
+### Instance Commands ✅
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -178,7 +178,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ✅ | `reconnect instance` | `<instance>` | Reconnect a disconnected instance |
 | ✅ | `disconnect instance` | `<instance>` | Disconnect an instance (no data, schema, or databases are destroyed) |
 
-### Database Commands
+### Database Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -191,7 +191,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `add database` | | Create a new database through a connected instance |
 | ⚠️ | `drop database` | `<database>` | Drop the database (the database will not exist after this operation) |
 
-### Repository Commands
+### Repository Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -210,7 +210,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `merge commit` | `<repo>/<branch>/<commit>` | Merge a commit to the parent branch |
 | ⚠️ | `deploy commit` | `<repo>/<branch>/<commit>` | Deploy the commit to the database attached to the branch |
 
-### Mapping Commands
+### Mapping Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -223,7 +223,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `modify map` | `<mapping>/<map>` | Modify an existing object relationship |
 | ⚠️ | `delete map` | `<mapping>/<map>` | Delete an object relationship |
 
-### Relationship Commands
+### Relationship Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -233,7 +233,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `modify relationship` | `<relationship>` | Modify the details of a relationship |
 | ⚠️ | `delete relationship` | `<relationship>` | Delete a relationship |
 
-### Transformation Commands
+### Transformation Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -243,7 +243,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `modify transformation` | `<transformation>` | Modify a transformation |
 | ⚠️ | `delete transformation` | `<transformation>` | Delete a transformation |
 
-### Policy Commands
+### Policy Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -253,7 +253,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⚠️ | `modify policy` | `<policy>` | Modify a policy |
 | ⚠️ | `delete policy` | `<policy>` | Delete a policy |
 
-### Model Context Protocol Server Commands
+### Model Context Protocol Server Commands ⚠️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -284,7 +284,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⛔️ | `attach mcp-prompt` | `<mcp-prompt> <mcp-server>` | Attach an MCP prompt to a server |
 | ⛔️ | `detach mcp-prompt` | `<mcp-prompt> <mcp-server>` | Detach an MCP prompt from a server |
 
-### API Token Commands
+### API Token Commands ⛔️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
@@ -294,7 +294,7 @@ The following tables show the implementation status of CLI commands across diffe
 | ⛔️ | `modify api-token` | `<api-token>` | Modify an API token |
 | ⛔️ | `delete api-token` | `<api-token>` | Delete an API token |
 
-### Access Control Commands
+### Access Control Commands ⛔️
 
 | Status | Command | Arguments | Description |
 |--------|---------|-----------|-------------|
